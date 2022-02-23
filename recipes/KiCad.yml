@@ -6,13 +6,13 @@ binpatch: true
 ingredients:
   packages:
     - kicad
-    - kicad-library
+    - kicad-library-all
     - libcurl3
-  dist: trusty
+  dist: focal
   sources:
-    - deb http://archive.ubuntu.com/ubuntu/ trusty main universe
+    - deb http://archive.ubuntu.com/ubuntu/ focal main universe
   ppas:
-    - js-reynaud/kicad-4
+    - kicad/kicad-6.0-releases
 
 script:
   - # Workaround until
